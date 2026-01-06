@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SUSHANT </title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="top-navbar">
+        <div class="container navbar-content">
+            <a href="#home-section" class="navbar-logo">Portfolio</a>
+            <ul class="navbar-menu">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home-section">
+        <div class="container header-container">
+            <div class="header-text-content">
+                <h1>Hi, I'm <span class="highlight-name">Sushant Shete</span></h1>
+                <h2>Web Developer and AI Developer</h2>
+                <p>I create beautiful and functional websites and AI applications</p>
+                <div class="header-buttons">
+
+
+                    <!-- <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a> -->
+
+
+                </div>
+            </div>
+            <div class="header-image-content">
+                <img src="Achivment/profile photo/My photo.jpg" alt="Sushant Shete" class="profile-img">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <p>I am an AI developer and a prompt engineer, currently pursuing my studies in
+                Computer Science and Engineering at SVERI College of Engineering, Pandharpur.
+                In addition to my expertise in web development and AI, I am passionate about 
+                learning and always eager to acquire new knowledge. I am a dedicated team player
+                who actively supports my teammates and fosters collaboration. Problem-solving is 
+                one of my strengths, and I approach challenges with a solution-oriented mindset. 
+                Effective communication is essential to me, as I strive to engage meaningfully with my peers.
+                As a leader, I take responsibility for guiding and motivating my team. I also value active
+                listening, ensuring that I understand and acknowledge the perspectives of others.
+                Additionally, I am confident in my decision-making abilities, always
+                ready to make informed and thoughtful choices.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-icons-grid">
+                <div class="skill-icon-card">
+                    <i class="fab fa-html5 skill-logo-icon"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-icon-card">
+                    <i class="fab fa-css3-alt skill-logo-icon"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-icon-card">
+                    <i class="fab fa-java skill-logo-icon"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-icon-card">
+                    <i class="fab fa-c skill-logo-icon"></i>
+                    <h3>Basic C</h3>
+                </div>
+                <div class="skill-icon-card">
+                    <i class="fab fa-python skill-logo-icon"></i>
+                    <h3>Python</h3>
+                </div>
+            </div>
+            <!-- <div class="resume-download-section">
+                <a href="Achivment/Resume/Sushant.pdf" download class="btn primary-btn download-resume-btn">
+                    <i class="fas fa-download"></i> Download My Resume
+                </a>
+            </div> -->
+
+            <!-- <div class="view_resume" class="resume-toggle-section">
+                <a href="https://example.com/document-page" >
+                    <button>View Document</button>
+                </a>
+            </div> -->
+
+            <!-- Resume View Button -->
+            <div class="resume-toggle-section">
+                <a href="resume.html">
+                    <button class="btn primary-btn">
+                        <i class="fas fa-eye"></i> View My Resume
+                    </button>                   
+                </a>
+            </div>
+
+            <!-- Hidden Resume Viewer -->
+            <div id="resumeViewer" style="display: none; margin-top: 20px;">
+                <iframe src="Achivment/Resume/Sushant.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+
+            <!-- JavaScript to Toggle Visibility -->
+            <script>
+                function toggleResume() {
+                const viewer = document.getElementById("resumeViewer");
+                viewer.style.display = viewer.style.display === "none" ? "block" : "none";
+                }
+            </script>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Certificates</h2>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Cad Master</h3>
+                        <p class="issuer">Sveri College of Engineering</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/Cad master.jpg" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>HTML page from microsoft learn</h3>
+                        <p class="issuer">Web Development</p>
+                        <p class="date">Issued: 2024</p>
+                        <a href="Achivment/Certificates/html.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>CSS styles from microsoft learn</h3>
+                        <p class="issuer">Web Development</p>
+                        <p class="date">Issued: 2024</p>
+                        <a href="Achivment/Certificates/CSS styles.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Generative AI</h3>
+                        <p class="issuer">LinkedIn learning</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/Gen AI linkdine.jpg" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Genrativ AI Workshop</h3>
+                        <p class="issuer"> Nxt Wave & Open AI</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/Gen AI (NXT WAVE).jpg" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Matlab Certificate</h3>
+                        <p class="issuer">ChatGPT, AI</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/certificate  Matlab.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>ChatGPT workshop</h3>
+                        <p class="issuer"> Open AI</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/ChatGPT for Everyone.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Clone Logic</h3>
+                        <p class="issuer">Sveri College of Engineering</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/Clone Logic.jpg" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>E-medicine management</h3>
+                        <p class="issuer">Sveri College of Engineering</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/E-medi.jpg" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Prompt Engineering</h3>
+                        <p class="issuer"> Alison </p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/Prompt.jpg" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Web accessibility</h3>
+                        <p class="issuer"> Google</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/Web accessibility.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>AI for everyone</h3>
+                        <p class="issuer"> Coursera</p>
+                        <p class="date">Issued: 2025</p>
+                        <a href="Achivment/Certificates/AI for everyone.pdf" class="view-certificate" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Achivment/project/milk.jpg" alt="Milk Store Inventory System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sushant00001.github.io/Home/milk.html" class="project-link" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/SUSHANT00001/Home" class="project-link" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Milk Store Inventory System</h3>
+                        <p>A comprehensive inventory management system for milk stores. Features include adding milk inventory, tracking quantities, dates, and prices. The system allows users to save inventory data and view previous records. Built with HTML, CSS, and JavaScript for efficient data management.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Achivment/project/milk2.jpg" alt="Advanced Inventory Management">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sushant00001.github.io/first1/inventory.html" class="project-link" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/SUSHANT00001/first1" class="project-link" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced Inventory Management</h3>
+                        <p>An enhanced version of the inventory system with improved features for managing milk inventory. The system includes date and time tracking, price management, and historical data viewing. Users can add, save, and view inventory records with detailed information about milk quantities and prices.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Data Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Achivment/project/Guess Game.jpg" alt="Interactive Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://delicate-frangipane-05be1b.netlify.app/" class="project-link" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://delicate-frangipane-05be1b.netlify.app/" class="project-link" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Interactive Game</h3>
+                        <p>An engaging browser-based game that demonstrates interactive web development skills. The game features smooth animations, responsive controls, and dynamic gameplay elements. Players can enjoy an interactive experience with intuitive controls and engaging mechanics.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Game Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-container">
+                <form action="https://formspree.io/f/mblyoygb" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:sushantshete310@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope-open-text"></i>
+                            sushantshete310@gmail.com
+                        </a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <a href="https://maps.google.com/?q=Malshiras,Maharashtra,India" target="_blank" class="contact-link">
+                            <i class="fas fa-map-marked-alt"></i>
+                            Malshiras, Maharashtra, India
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <div class="container">
+            <div class="section-title">
+                <h2>Connect With Me</h2>
+            </div>
+            <div class="social-links-grid">
+                <a href="https://github.com/SUSHANT00001" target="_blank" class="social-link-card">
+                    <i class="fab fa-github social-icon"></i>
+                    <h3>GitHub</h3>
+                </a>
+                <a href="https://www.linkedin.com/in/sushant-shete-bab9b832b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link-card">
+                    <i class="fab fa-linkedin-in social-icon"></i>
+                    <h3>LinkedIn</h3>
+                </a>
+                <a href="https://www.instagram.com/sushant_shete_001?igsh=MTI2YTVscmQwYXdtaw==&utm_source=ig_contact_invite" target="_blank" class="social-link-card">
+                    <i class="fab fa-instagram social-icon"></i>
+                    <h3>Instagram</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Sushant Shete. All rights reserved.</p>
+            <p>Designed and Developed by Sushant Shete</p>
+            <div class="footer-socials">
+                <a href="https://github.com/SUSHANT00001" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sushant-shete-bab9b832b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/sushant_shete_001?igsh=MTI2YTVscmQwYXdtaw==&utm_source=ig_contact_invite" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

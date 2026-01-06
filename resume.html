@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Display </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .code-snippet {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            display: block;
+            overflow-x: auto;
+        }
+
+        /* Responsive wrapper for PDF */
+        .pdf-frame {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .note {
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+        <!-- Using a sample online PDF for demonstration -->
+        <iframe 
+            src="Achivment/Resume/Sushant.pdf" 
+            class="pdf-frame" 
+            title="PDF in Iframe">
+        </iframe>
+</body>
+</html>
