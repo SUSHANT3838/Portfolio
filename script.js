@@ -1,7 +1,7 @@
 // Initialize EmailJS
 (function() {
     // Initialize with your public key
-    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // <-- REPLACE THIS with your actual EmailJS Public Key
+    emailjs.init(`NCT5WrzFtpmrwxFhv`); // <-- REPLACE THIS with your actual EmailJS Public Key
 })();
 
 // Form submission handling
@@ -27,7 +27,7 @@ if (contactForm) {
         };
 
         // Send email using EmailJS
-        emailjs.send('YOUR_EMAILJS_SERVICE_ID', 'YOUR_EMAILJS_TEMPLATE_ID', formData) // <-- REPLACE THESE with your Service ID and Template ID
+        emailjs.send('service_dyux5le', 'template_srjbceq', formData) // <-- REPLACE THESE with your Service ID and Template ID
             .then(function() {
                 // Show success message
                 formStatus.className = 'form-status success';
