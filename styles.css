@@ -17,10 +17,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: #1f2937; /* Dark background color */
+    overflow-x: hidden;
 }
 
 .container {
@@ -33,7 +38,7 @@ body {
 header {
     background: #1a202c; /* Dark background color */
     color: white;
-    padding-top: 130px; /* Adjust based on navbar height */
+    padding-top: clamp(100px, 12vw, 130px); /* Adjust based on navbar height */
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -64,11 +69,12 @@ header::before {
 
 .header-text-content {
     flex: 1;
-    min-width: 300px;
+    min-width: 0;
+    max-width: 650px;
 }
 
 .header-text-content h1 {
-    font-size: 3.5rem; /* Larger font size */
+    font-size: clamp(2.2rem, 6vw, 3.5rem); /* Larger font size */
     margin-bottom: 10px;
     line-height: 1.2;
     text-shadow: none;
@@ -79,13 +85,13 @@ header::before {
 }
 
 .header-text-content h2 {
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
     color: #a0aec0; /* Lighter color for subtitle */
     margin-bottom: 20px;
 }
 
 .header-text-content p {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     max-width: 600px;
     margin: 0;
     color: rgba(255, 255, 255, 0.8);
@@ -95,6 +101,7 @@ header::before {
 .header-buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -143,8 +150,8 @@ header::before {
 }
 
 .profile-img {
-    width: 250px; /* Adjust size as needed */
-    height: 250px;
+    width: clamp(180px, 30vw, 250px); /* Adjust size as needed */
+    height: clamp(180px, 30vw, 250px);
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--primary-color); /* Blue border */
@@ -165,11 +172,11 @@ header::before {
     }
 
     .header-text-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .header-text-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .profile-img {
@@ -203,7 +210,7 @@ section:nth-child(even) {
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     color: var(--primary-color);
     position: relative;
     display: inline-block;
@@ -224,7 +231,7 @@ section:nth-child(even) {
 /* Skills Section */
 .skills-icons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted for icon cards */
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Adjusted for icon cards */
     gap: 30px;
     margin-top: 40px;
     margin-bottom: 50px;
@@ -278,7 +285,7 @@ section:nth-child(even) {
 /* Certificates Section */
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -349,7 +356,7 @@ section:nth-child(even) {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -439,7 +446,7 @@ section:nth-child(even) {
 }
 
 .project-content p {
-    color: var(--text-secondary);
+    color: var(--light-text);
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -503,7 +510,7 @@ section:nth-child(even) {
 /* Contact Section Styles */
 .contact-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
@@ -618,21 +625,64 @@ section:nth-child(even) {
 }
 
 @media (max-width: 768px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-    
     .contact-form {
         padding: 20px;
     }
     
     .contact-info {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-    
-    .contact-info-item {
-        flex: 1 1 250px;
+}
+
+@media (max-width: 480px) {
+    .top-navbar {
+        padding: 8px 0;
+    }
+
+    .navbar-logo {
+        font-size: 1.35rem;
+    }
+
+    .navbar-menu {
+        gap: 10px 12px;
+    }
+
+    .navbar-menu li a {
+        font-size: 0.85rem;
+    }
+
+    .header-container {
+        gap: 22px;
+    }
+
+    .header-text-content p {
+        margin-bottom: 22px;
+    }
+
+    .section-title {
+        margin-bottom: 32px;
+    }
+
+    .skill-icon-card,
+    .social-link-card,
+    .contact-info-item,
+    .certificate-card,
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    .submit-btn,
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-buttons {
+        width: 100%;
     }
 }
 
@@ -725,6 +775,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .navbar-logo {
@@ -792,12 +844,19 @@ html {
         padding: 10px 0;
     }
 
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar-logo {
         font-size: 1.5rem;
     }
 
     .navbar-menu {
-        gap: 15px;
+        gap: 12px 16px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .navbar-menu li a {
@@ -805,11 +864,19 @@ html {
     }
 
     header {
-        padding-top: 100px; /* Smaller padding for mobile header */
+        padding-top: 110px; /* Smaller padding for mobile header */
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 64px 0;
     }
 
     .skills-icons-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
 
     .skill-logo-icon {
@@ -832,6 +899,39 @@ html {
     .profile-img {
         width: 180px;
         height: 180px;
+    }
+
+    .certificates-grid,
+    .projects-grid,
+    .social-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .certificate-icon {
+        margin-bottom: 8px;
+    }
+
+    .project-links {
+        flex-direction: row;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        width: 100%;
+        word-break: break-word;
+    }
+
+    .footer-socials {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
