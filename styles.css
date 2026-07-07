@@ -687,6 +687,18 @@ section:nth-child(even) {
 }
 
 /* Footer Styles */
+
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#feedback{
+    color: var(--light-text);
+    font-size: 0.95rem;
+    
+}
+
 footer {
     background-color: #1a202c;
     padding: 40px 0;
